@@ -18,15 +18,7 @@ clientes = []
 alugueis = []
  
  
-def mostrar_menu():
-    print("\n===== LOCADORA DE FILMES =====")
-    print("1 - Listar filmes")
-    print("2 - Cadastrar cliente")
-    print("3 - Alugar filme")
-    print("4 - Devolver filme")
-    print("5 - Ver filmes alugados")
-    print("0 - Sair")
- 
+
  
 def listar_filmes():
     print("\n--- Catálogo de Filmes ---")
@@ -49,14 +41,7 @@ def cadastrar_cliente():
         print(f"Cliente {nome} cadastrado com sucesso!")
  
  
-def buscar_filme(id_filme):
-    # Procura o filme pelo id e retorna ele (ou None se não achar)
-    for filme in filmes:
-        if filme["id"] == id_filme:
-            return filme
-    return None
- 
- 
+
 def alugar_filme():
     nome = input("Nome do cliente: ").strip()
     if nome not in clientes:
